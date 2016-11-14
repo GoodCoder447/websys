@@ -1,0 +1,81 @@
+{
+	"songs": [
+		{
+			"songName": "Basket Case",
+			"artist": "Green Day",
+			"album": "Dookie",
+			"coverArtURL":"GreenDayDookieCover.jpg",
+			"releaseDate":"1994",
+			"artistSiteURL":"http://www.greenday.com/",
+			"genres":[
+				"'90s Alternative", 
+				"Rock",
+				"Punk"
+			]
+		},
+		{
+			"songName":"Una",
+			"artist": "Animal Eyes",
+			"album":"Where We Go",
+			"coverArtURL":"AnimalEyes_WhereWeGo.jpg",
+			"releaseDate":"2016",
+			"artistSiteURL":"https://animaleyesband.bandcamp.com/",
+			"genres":[
+				"Psychedelic Rock",
+				"Alternative"
+			]
+		},
+		{
+			"songName": "Avant Gardnener",
+			"artist": "Courtney Barnett",
+			"album":"The Double EP: A Sea of Split Peas",
+			"coverArtURL":"CourtneyBarnett_DoubleEP.jpg",
+			"releaseDate":"2013",
+			"artistSiteURL":"http://socialhub.courtneybarnett.com.au/",
+			"genres":[
+				"Pop",
+				"Rock",
+				"Alternative/Indie"
+			]
+		},
+		{
+			"songName": "It Is Not Meant To Be",
+			"artist": "Tame Impala",
+			"album":"InnerSpeaker",
+			"coverArtURL":"TameImpala_InnerSpeaker.jpg",
+			"releaseDate":"2010",
+			"artistSiteURL":"http://www.tameimpala.com/",
+			"genres":[
+				"Indie Rock",
+				"Psychedelic Rock",
+				"Alternative"
+			]
+		},
+		{
+			"songName": "Holland, 1945",
+			"artist": "Neutral Milk Hotel",
+			"album":"In The Aeroplane Over the Sea",
+			"coverArtURL":"NeutralMilkHotel_Aeroplane.jpg",
+			"releaseDate":"1998",
+			"artistSiteURL":"http://walkingwallofwords.com/",
+			"genres":[
+				"Alternative",
+				"Pop/Rock",
+				"Lo-Fi"
+			]
+		},
+		{
+			"songName": "Pain",
+			"artist": "Jimmy Eat World",
+			"album":"Futures",
+			"coverArtURL":"JimmyEatWorld_Futures.jpg",
+			"releaseDate":"2004",
+			"artistSiteURL":"http://www.jimmyeatworld.com/",
+			"genres":[
+				"Alternative",
+				"Pop/Rock",
+				"Emo-Rock"
+			]
+		}
+	]
+}

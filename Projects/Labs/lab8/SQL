@@ -1,0 +1,125 @@
+/* There are a few rows in the db that are went through before I was
+finished, and had to redo them. But I couldnt delete so they are 
+still there */
+
+
+1. Add address fields (street, city, st, zip) to the students table
+
+	ALTER TABLE `students` ADD `street` VARCHAR(100) NULL AFTER `phone`, ADD `city` VARCHAR(100) NULL AFTER `street`, ADD `state` VARCHAR(100) NULL AFTER `city`, ADD `zip` INT(5) NULL AFTER `state`;
+	
+	Table students has been altered successfully.
+	
+2. Add section and year fields to the courses table
+
+	ALTER TABLE `courses` ADD `section` INT(2) NULL AFTER `title`, ADD `year` INT(4) NULL AFTER `section`;
+	
+	Table courses has been altered successfully.
+	
+3. CREATE a grades table containing
+id (int primary key, auto increment)
+crn (foreign key)
+rin (foreign key)
+grade (int 3 not null)
+
+	CREATE TABLE `websyslab8`.`grades` ( `id` INT NOT NULL AUTO_INCREMENT , `crn` INT(11) NULL , `rin` INT(9) NULL , `grade` INT(3) NOT NULL , PRIMARY KEY (`id`), INDEX (`crn`), INDEX (`rin`)) ENGINE = InnoDB;
+	
+	No output
+	
+4.
+INSERT INTO `Courses` (`crn`, `prefix`, `number`, `title`, `section`, `year`) VALUES
+(35693, 'COMM', 2940, 'Communication Studies', 1, 2017),
+(37385, 'COMM', 1600, 'History and Culture of Games', 1, 2017),
+(37884, 'COMM', 4350, 'Creative Seminar II', 1, 2017),
+(38005, 'COMM', 4240, 'Writing for Games I', 1, 2017),
+(38182, 'ARTS', 1040, 'Art for Interactive Media', NULL, NULL),
+(38620, 'COMM', 2610, 'Introduction to Visual Communication ', 1, 2017),
+(38696, 'COMM', 2960, 'Topics in Communication ', 1, 2017),
+(39027, 'ARTS', 1030, 'Digital Filmmaking', NULL, NULL),
+(39053, 'COMM', 1510, 'Communication Theory and Practice', 1, 2017),
+(39059, 'COMM', 4430, 'Design for Global Society', 1, 2017),
+(39061, 'COMM', 2520, 'Introduction to Game Storytelling', 1, 2017),
+(39081, 'COMM', 4540, 'Visual Culture ', 1, 2017);
+
+5.
+INSERT INTO `Students` (`rin`, `rcsID`, `first name`, `last name`, `alias`, `phone`, `street`, `city`, `state`, `zip`) VALUES
+(111111110, 'qwerty', 'rut', 'yret', 'rutyret', 1234567899, 'street', 'city', 'state', 11111),
+(111111111, 'qwertyu', 'Pap', 'Slap', 'PapSlap', 1123456789, 'Street', 'City', 'State', 11111),
+(111111112, 'qwertyu', 'Pop', 'Slop', 'PopSlop', 1111111111, 'Street', 'City', 'State', 11111),
+(111111113, 'qwertyu', 'Pip', 'Slip', 'PipSlip', 1111111111, NULL, NULL, NULL, NULL),
+(111111115, 'qwerty', 'P', 'S', 'PS', 1234567899, 'Street', 'City', 'State', 11111),
+(111111116, 'qwerty', 'pup', 'splu', 'pupsplu', 1234567899, 'street', 'city', 'state', 11111),
+(111111117, 'qwerty', 'tut', 'yut', 'tutyut', 1123456789, 'street', 'city', 'state', 11111),
+(111111119, 'qwertyu', 'ret', 'tre', 'retre', 1234567899, 'street', 'city', 'state', 11111),
+(222222222, 'qwerty', 'hate', 'this', 'assignment', 1234567877, 'street', 'city', 'state', 111111),
+(333333333, 'qwertyu', 'pop', 'stop', 'this assignment', 1111111111, 'street', 'city', 'state', 111111);
+
+
+6.
+INSERT INTO `Grades` (`id`, `crn`, `rin`, `grade`) VALUES ('1', '37385', '111111110', '4'), ('2', '37884', '111111111', '4'), ('3', '38005', '111111112', '4'), ('4', '38182', '111111113', '4'), ('5', '38620', '111111115', '4'), ('6', '38696', '111111116', '4'), ('7', '39027', '111111117', '4'), ('8', '39053', '111111119', '4'), ('9', '39059', '222222222', '4'), ('10', '39061', '333333333', '4'),('11', '37385', '333333333', '4'), ('12', '37884', '222222222', '4'), ('13', '38005', '111111119', '4'), ('14', '38620', '111111117', '4'), ('15', '38696', '111111116', '4'), ('16', '39027', '111111115', '4'), ('17', '39053', '111111113', '4'), ('18', '39059', '111111112', '4'), ('19', '39061', '111111111', '4'), ('20', '39081', '111111110', '4');
+
+7. 
+SELECT rin, "last name", rcsID, "first name" FROM `Students` WHERE 1
+
+111111110 yret qwerty rut
+111111111 Slap qwertyu Pap
+111111112 Slop qwertyu Pop
+111111113 Slip qwertyu Pip
+111111115 S qwerty P
+111111116 splu qwerty pup
+111111117 yut qwerty tut
+111111119 tre qwertyu ret
+222222222 this qwerty hate
+333333333 stop qwertyu pop
+
+/* I WAS LAZY AND MADE BOGUS NAMES  DONT DOCK ME PLEASE <3 */
+
+8. /* INPUTTED GRADES ON A 0,1,2,3,4 GPA-BASED MODEL PLOTKA SAID WAS FINE*/
+
+SELECT DISTINCT `first name`, `last name` FROM `Students`, `Grades` WHERE Grades.rin = Students.rin AND Grades.grade >= 4
+
+rut yret
+Pap Slap
+Pop Slop
+Pip Slip
+P S
+pup splu
+tut yut
+ret tre
+hate this
+pop stop
+
+
+9.
+
+SELECT AVG(Grades.grade) FROM Grades WHERE Grades.crn = 37385
+
+
+AVG(Grades.grade)
+4.0000
+
+/* Only have two rows with the 2nd course, but both had values of 4 haha */
+
+
+10.
+SELECT COUNT(*) FROM Students WHERE 1
+
+COUNT(*)
+11
+
+/* In question 5 i only inserted 10, but later accidently inserted a null row, so in reality there are actually 11 in the table. */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

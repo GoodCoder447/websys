@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="slotep-lab2part4.css"?>
+<SongList xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <Song>
+   	  <name>Basket Case</name>
+   	  <artist>
+   	  	<html:a target="_blank" href="http://www.greenday.com/">
+   	  		Green Day
+   	  	</html:a>
+   	  </artist>
+   	  <album>
+   	  	<html:a target="_blank" href="https://www.allmusic.com/album/dookie-mw0000107965">
+   	  		Dookie
+   	  	</html:a>
+   	  </album>
+   	  <releaseDate>1994</releaseDate>
+   	  <genres>'90s Alternative, Rock, Punk</genres>
+   	  <albumCover>
+   	  	<html:img src="GreenDayDookieCover.jpg" height="87" width="87" alt="Dookie" />
+   	  </albumCover> 
+   </Song>
+
+   <Song>
+   	  <name>Una</name>
+   	  <artist>
+   	  	<html:a target="_blank" href="https://animaleyesband.bandcamp.com/">
+   	  		Animal Eyes
+   	  	</html:a>
+   	  </artist>
+   	  <album>
+   	  	<html:a target="_blank" href="https://animaleyesband.bandcamp.com/">
+   	  		Where We Go
+   	  	</html:a>
+	  </album>
+   	  <releaseDate>2016</releaseDate>
+   	  <genres>Psychedelic Rock, Alternative</genres>
+   	  <albumCover>
+   	  	<html:img src="AnimalEyes_WhereWeGo.jpg" height="87" width="87" alt="Where We Go"/>
+   	  </albumCover>
+   </Song>
+
+   <Song>
+   	  <name>Avant Gardener</name>
+   	  <artist>
+   	  	<html:a target="_blank" href="http://socialhub.courtneybarnett.com.au/">
+   	  		Courtney Barnett
+   	  	</html:a>
+   	  </artist>
+   	  <album>
+   	  	<html:a target="_blank" href="https://www.allmusic.com/album/the-double-ep-a-sea-of-split-peas-mw0002580112">
+   	  		The Double EP: A Sea of Split Peas
+   	  	</html:a>
+   	  </album>
+   	  <releaseDate>2013</releaseDate>
+   	  <genres>Pop, Rock, Altnerative/Indie</genres>
+   	  <albumCover>
+   	  	<html:img src="CourtneyBarnett_DoubleEP.jpg" height="87" width="87" alt="DoubleEP"/>
+   	  </albumCover>
+   </Song>
+
+   <Song>
+   	  <name>It Is Not Meant To Be</name>
+   	  <artist>
+   	  	<html:a target="_blank" href="http://www.tameimpala.com/">
+   	  		Tame Impala
+   	  	</html:a>
+   	  </artist>
+   	  <album>
+   	  	<html:a target="_blank" href="https://www.allmusic.com/album/innerspeaker-mw0001990920">
+   	  		InnerSpeaker
+   	  	</html:a>
+   	  </album>
+   	  <releaseDate>2010</releaseDate>
+   	  <genres>Indie Rock, Psychedelic Rock, Alternative</genres>
+   	  <albumCover>
+   	  	<html:img src="TameImpala_InnerSpeaker.jpg" height="87" width="87" alt="InnerSpeaker"/>
+   	  </albumCover>
+   </Song>
+
+   <Song>
+   	  <name>Holland, 1945</name>
+   	  <artist>
+   	  	<html:a target="_blank" href="http://walkingwallofwords.com/">
+   	  		Neutral Milk Hotel
+   	  	</html:a>
+   	  </artist>
+   	  <album>
+   	  	<html:a target="_blank" href="https://www.allmusic.com/album/in-the-aeroplane-over-the-sea-mw0000032195">
+   	  		In the Aeroplane Over the Sea
+   	  	</html:a>
+   	  </album>
+   	  <releaseDate>1998</releaseDate>
+   	  <genres>Alternative, Pop/Rock, Lo-Fi</genres>
+   	  <albumCover>
+   	  	<html:img src="NeutralMilkHotel_Aeroplane.jpg" height="87" width="87" alt="Aeroplane"/>
+   	  </albumCover>
+   </Song>
+
+   <Song>
+   	  <name>Pain</name>
+   	  <artist>
+   	  	<html:a target="_blank" href="http://www.jimmyeatworld.com/">
+   	  		Jimmy Eat World
+   	  	</html:a>
+   	  </artist>
+   	  <album>
+   	  	<html:a target="_blank" href="https://www.allmusic.com/album/futures-mw0000301264">
+   	  		Futures
+   	  	</html:a>
+   	  </album>
+   	  <releaseDate>2004</releaseDate>
+   	  <genres>Pop/Rock, Alternative, Emo-Rock</genres>
+   	  <albumCover>
+   	  	<html:img src="JimmyEatWorld_Futures.jpg" height="87" width="87" alt="Futures"/>
+   	  </albumCover>
+   </Song>
+</SongList>

@@ -1,0 +1,131 @@
+/* The overall column wrapper, as fell as the border*/
+.wrapper {
+  width: 99%;
+  height: 99%;
+  padding: 4px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  float: left;
+}
+
+/* Column partioned to be less than 100% of total width*/
+.column {
+  width: 16%;
+  height: 100%;
+  /*padding: 4px;*/
+  float: left;
+  text-align: center;
+}
+
+/* Div for end to center it */
+div#end{
+    clear:both;
+    margin-top: 0%;
+    text-align: center;
+}
+
+/* Overall img qualities to space them*/
+img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 11%;
+
+    display: block;
+}
+
+/* Space for the genre lists */
+ul.genre {
+    margin-top: 0;
+    margin-left: 0;
+    padding-bottom: 25%;
+
+    text-align: left;
+    list-style-type:none;
+}
+
+/* Add a dash before the list*/
+li.genre:before {
+    content: "- ";
+}
+
+/* Margin for header*/
+p#cover {
+    margin-bottom: 3%;
+}
+
+/* Margin for song header*/
+p#songHeader {
+    padding-bottom: 8%;
+}
+
+/* Margin for album header*/
+p#albumHeader {
+    padding-bottom: 9%;
+}
+
+/* Margin for releasedate header*/
+p#releaseHeader {
+    padding-bottom: 9%;
+}
+
+/* Margin for artist header*/
+p#artistHeader {
+    padding-bottom: 7.5%;
+}
+
+/* Margin for favorite song*/
+p#favorite {
+    color:green;
+}
+
+/* For all the headers, mostly text decoration*/
+p.header {
+    margin-top: 1%;
+    padding-bottom: 5%;
+
+    font-size: 140%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* For all the entries to be non spaced */
+p.entry {
+    margin-top:0;
+    padding-top:0;
+}
+
+/* Spacing and font for the song column */
+p.song {
+    font-variant: small-caps;
+    padding-bottom: 39.7%; 
+}
+
+/* Spacing and font for the artist column */
+p.artist {
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom:36%;
+}
+
+/* Spacing and font for the song column */
+p.album {
+    font-style: italic;
+    padding-bottom:39.5%;
+}
+
+/* Spacing and font for the release date column */
+p.releaseDate {
+    font-size: 80%;
+    padding-bottom: 43%;
+}
+
+/* Spacing and font for the end parapgraph */
+p#endP {
+    font-style: italic;
+    font-size: 75%;
+}
+
+/* Font size for the genres. */
+li.genre {
+    font-size: 80%;
+}

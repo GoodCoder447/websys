@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lab 3</title>
+    <!-- <link rel=stylesheet href="lab3Solution.css"/> -->
+    <script type="text/javascript" src="pr2.js"></script>
+
+
+  </head>
+  <body>
+    <h1>Hexed! A jQuery Game</h1>
+    <div id="desc">
+        Your goal is to guessthe RGB vlues of the swatch on the left, by matching the right swatch with the sliders.
+        <br/>
+        Press the "Got it" button when you are complete.
+    </div>  
+
+
+    <canvas id="myCanvas" width="200" height="150" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <canvas id="myCanvas2" width="200" height="150" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <p>
+        <input type="text" maxlength="6" size="6" id="colorpickerField1" value="00ff00">
+    </p>
+    <p>
+        <input type="text" maxlength="6" size="6" id="colorpickerField2" value="00ff00">
+    </p>
+    <p>
+        <input type="text" maxlength="6" size="6" id="colorpickerField3" value="00ff00">
+    </p>
+  </body>
+  <script>
+      var c1 = document.getElementById("myCanvas");
+      var c2 = document.getElementById("myCanvas2");
+
+      var ctx1 = c1.getContext("2d");
+      var ctx2 = c2.getContext("2d");
+
+      ctx1.beginPath();
+      ctx1.arc(100, 75, 50, 0, 2 * Math.PI);
+      ctx1.fillStyle = "#FF0000";
+      ctx1.stroke();
+      ctx1.fill();nFor
+
+      ctx2.beginPath();
+      ctx2.arc(100, 75, 50, 0, 2 * Math.PI);
+      ctx2.stroke();
+  </script>
+</html>

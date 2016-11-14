@@ -1,0 +1,38 @@
+/* Associated css changes. Exactly what was listed in the requirements of part 4.*/
+
+SongList {
+	width:100%;
+}
+
+Song {
+	display: block;
+	clear:both;
+	width: 100%;
+	border-bottom: 1.5px solid #000;
+}
+
+name {
+	font-size: 80%;
+	margin-right: 2%;
+}
+
+artist {
+	color:blue;
+	margin-right: 2%;
+}
+
+album {
+	font-style:italic;
+	margin-right: 2%;
+}
+
+releaseDate {
+	margin-right: 2%;
+}
+
+genres {
+	margin-right: 2%;
+}
+
+
+

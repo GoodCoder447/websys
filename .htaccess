@@ -1,0 +1,13 @@
+<Directory "/Users/parkerslote/Dropbox/WebSystemsDevelopment/websys">
+    AllowOverride None
+    Options Indexes FollowSymLinks
+    Require all granted
+</Directory>
+
+
+<VirtualHost awebsys:80>
+    ServerName awebsys
+    DocumentRoot "/Users/parkerslote/Dropbox/WebSystemsDevelopment/websys"
+</VirtualHost>
+
+
