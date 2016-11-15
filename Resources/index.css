@@ -1,0 +1,40 @@
+#Projects {
+	margin-left: 2em;
+}
+
+#Projects p {
+	font-size: 2em;
+}
+#Labs {
+	margin-left: .5em
+}
+
+#Labs p{
+	text-indent : 2em;
+	font-size: 1.5em;
+}
+
+#Labs li {
+	margin-left: 3em;
+}
+
+#Homeworks p{
+	text-indent: 2em;
+	font-size: 1.5em;
+}
+
+#Homeworks li {
+	margin-left: 4em;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+}
+body {
+	background-color: #F3FAB6;
+}
